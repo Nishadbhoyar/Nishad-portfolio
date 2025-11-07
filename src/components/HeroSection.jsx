@@ -1,4 +1,4 @@
-
+import imgg from '../assets/IMG_E7340.JPG'
 
 
 import { ArrowDown } from "lucide-react";
@@ -74,7 +74,7 @@ export const HeroSection = () => {
 
               {/* Circular image with reveal animation */}
               <img
-                src="src/assets/IMG_E7340.JPG"
+                src={imgg}
                 alt="Nishad Bhoyar"
                 className="relative object-cover w-full h-full border-4 border-transparent rounded-full shadow-xl group-hover:scale-110 group-hover:shadow-purple-400/50 animate-reveal transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]"
                 style={{ zIndex: 20 }}
