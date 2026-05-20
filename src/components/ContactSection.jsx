@@ -104,15 +104,15 @@ export const ContactSection = () => {
             <div className="mt-6">
               <h4 className="font-medium mb-3">Connect With Me</h4>
               <div className="flex items-center gap-4">
-                <a href="#" target="_blank" className="hover:text-primary transition-colors">
+                <a href="https://www.linkedin.com/in/nishad-bhoyar-29b98a259/" target="_blank" className="hover:text-primary transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" target="_blank" className="hover:text-primary transition-colors">
+                <a href="https://x.com/NishadBhoyar" target="_blank" className="hover:text-primary transition-colors">
                   <Twitter size={24} />
                 </a>
-                <a href="#" target="_blank" className="hover:text-primary transition-colors">
+                {/* <a href="#" target="_blank" className="hover:text-primary transition-colors">
                   <Instagram size={24} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

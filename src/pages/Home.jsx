@@ -47,6 +47,7 @@ import { Navbar } from "./Navbar";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillSection } from "../components/SkillSection";
+import { CertificateSection } from "../components/CertificateSection"; // ✅ Import the new section
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 
@@ -64,6 +65,7 @@ export const Home = () => {
                 <HeroSection/>
                 <AboutSection/>
                 <SkillSection/>
+                <CertificateSection/> {/* ✅ Added right after Skills */}
                 <ProjectsSection/>
                 <ContactSection/>
             </main>

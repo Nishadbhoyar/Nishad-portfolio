@@ -201,7 +201,6 @@ import { cn } from "@/lib/utils";
 
 // Skills list with logos
 const skills = [
-  // Skills list with logos
   // Frontend
   { name: "HTML", level: 95, category: "frontend", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" },
   { name: "CSS", level: 85, category: "frontend", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" },
@@ -276,15 +275,21 @@ export const SkillSection = () => {
 
         {/* Skill Grid */}
         <motion.div layout className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <AnimatePresence mode="popLayout">
+          {/* REMOVED mode="popLayout" here */}
+          <AnimatePresence>
             {filteredSkills.map((skill) => (
               <motion.div
                 key={skill.name}
                 layout // Automatically animates position changes
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.9 }} // Tweaked from 0.8 to 0.9 for less aggressive entry
                 animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                // Refined transition to balance layout flow and opacity fades
+                transition={{ 
+                  layout: { type: "spring", bounce: 0.2, duration: 0.5 },
+                  opacity: { duration: 0.2 },
+                  scale: { duration: 0.2 }
+                }}
                 className="relative p-6 transition-all duration-300 border rounded-2xl bg-background/40 backdrop-blur-md border-foreground/10 hover:border-primary/40 group hover:shadow-[0_0_30px_-10px_rgba(168,85,247,0.3)] hover:-translate-y-1"
               >
                 {/* Header: Logo, Name, Percentage */}
