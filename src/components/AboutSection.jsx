@@ -182,9 +182,13 @@ export const AboutSection = () => {
               <a href="#contact" className="text-center cosmic-button">
                 Get In Touch
               </a>
-              <a href="/" target="_blank" className="px-6 py-3 font-medium text-center transition-colors duration-300 border rounded-full border-primary text-primary hover:bg-primary/10">
-                Download CV
-              </a>
+              <a 
+  href="/CV.pdf" 
+  download="Nishad_Bhoyar_CV.pdf"
+  className="px-6 py-3 font-medium text-center transition-colors duration-300 border rounded-full border-primary text-primary hover:bg-primary/10"
+>
+  Download CV
+</a>
             </motion.div>
           </motion.div>
           
