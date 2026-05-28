@@ -115,6 +115,7 @@
 
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
+import myCV from "../../assets/CV/Nishad_Bhoyar_CV.pdf";
 
 const Card = ({ title, description }) => (
   <motion.div
@@ -182,8 +183,8 @@ export const AboutSection = () => {
               <a href="#contact" className="text-center cosmic-button">
                 Get In Touch
               </a>
-              <a 
-  href="/CV.pdf" 
+              <a
+  href="/Nishad_Bhoyar_CV.pdf"
   download="Nishad_Bhoyar_CV.pdf"
   className="px-6 py-3 font-medium text-center transition-colors duration-300 border rounded-full border-primary text-primary hover:bg-primary/10"
 >
