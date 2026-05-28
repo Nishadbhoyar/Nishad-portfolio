@@ -115,7 +115,7 @@
 
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
-import resumeLink from "../assets/CV/Nishad_Bhoyar_CV.pdf";
+import resumeLink from "../assets/CV/Nishad_Bhoyar_7058875849.pdf";
 
 const Card = ({ title, description }) => (
   <motion.div
